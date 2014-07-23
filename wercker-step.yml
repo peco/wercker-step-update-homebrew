@@ -1,5 +1,5 @@
 name: peco-update-homebrew
-version: 0.0.1
+version: 0.0.2
 decsription: wercker step to update homebrew's peco recipe
 keywords:
   - Homebrew
