@@ -4,7 +4,7 @@ set -e
 
 if [ ! -n "$RELEASE_TAG" ]; then
     echo "no release tag"
-    exit 1
+    exit 0
 fi
 
 git clone git@github.com:peco/homebrew-peco.git
