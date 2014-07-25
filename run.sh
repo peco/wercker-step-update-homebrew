@@ -1,7 +1,5 @@
 #!/bin/sh
 
-set -e
-
 if [ ! -n "$RELEASE_TAG" ]; then
     echo "no release tag"
     exit 0
