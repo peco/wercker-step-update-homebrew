@@ -1,8 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ ! -n "$RELEASE_TAG" ]; then
-    echo "no release tag"
-    exit 0
+    RELEASE_TAG=$(cat .release_tag)
+    if [ ! -n "$RELEASE_TAG" ]; then
+        echo "no release tag"
+        exit 0
+    fi
 fi
 
 if [ ! -n "$GITHUB_TOKEN" ]; then
